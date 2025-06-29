@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.boulderspace3d.android"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        sourceSets { main { assets.srcDirs = ['../assets'] } }
+    }
+    buildTypes {
+        release { minifyEnabled false }
+        debug   { applicationIdSuffix ".debug" }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+def admobVersion = '21.0.0'
+def playBillingVersion = '7.0.0'
+dependencies {
+    implementation project(':core')
+    implementation "com.google.android.gms:play-services-ads:$admobVersion"
+    implementation "com.android.billingclient:billing-ktx:$playBillingVersion"
+    implementation 'com.paypal.checkout:paypalcheckout:2.23.4'
+}
