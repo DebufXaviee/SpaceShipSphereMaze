@@ -1,5 +1,7 @@
 package com.boulderspace3d.app;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;import com.boulderspace3d.di.Injection;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.boulderspace3d.di.Injection;
 public class MainApplication {
     public static void main(String[] args){
         Injection.setup();
