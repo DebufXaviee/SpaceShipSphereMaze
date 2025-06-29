@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.boulderspace3d.android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:name=".App" android:label="BoulderSpace3D">
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-xxx~yyy"/>
+        <activity android:name=".ui.BillingActivity"/>
+        <activity android:name=".ui.BillingActivity"/>
+    </application>
+</manifest>

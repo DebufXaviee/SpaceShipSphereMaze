@@ -1,19 +1,10 @@
-plugins {
-    id 'java'
+buildscript {
+    repositories { google(); mavenCentral() }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.4.2"
+        classpath "org.robovm:robovm-gradle-plugin:2.3.13"
+    }
 }
-
-group 'com.boulderspace3d'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
+allprojects {
+    repositories { google(); mavenCentral() }
 }
-
-dependencies {
-    implementation 'com.badlogicgames.gdx:gdx:1.11.0'
-    implementation 'com.google.inject:guice:5.1.0'
-    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
-}
-
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
