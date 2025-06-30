@@ -1,4 +1,2 @@
 rootProject.name = 'BoulderSpace3D'
-include ':core'
-include 'core'
-include 'android'
+include 'core', 'android'
